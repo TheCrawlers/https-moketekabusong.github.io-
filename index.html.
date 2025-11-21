@@ -1,152 +1,109 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>The Crawlers Daycare</title>
-</head>
-<body>
-
-<header>
-    <img src="logo.png" alt="Daycare Logo" width="200" style="display:block; margin:auto;">
-    <h1>The Crawlers Daycare</h1>
-    <!-- Navigation links -->
-</header>
-
-<!-- ABOUT SECTION -->
-<section id="about">
-    <!-- Current About content -->
-</section>
-
-<!-- APPLICATION SECTION -->
-<section id="application">
-    <!-- Current Application content -->
-</section>
-
-<!-- POLICIES SECTION -->
-<section id="policies">
-    <!-- Current Policies content -->
-</section>
-
-</body>
-</html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Daycare</title>
+  <title>The Crawlers Daycare</title>
   <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #FEE440; /* bright soft yellow background */
-        color: #2A2A2A; /* dark grey text for readability */
-        margin: 0;
-        padding: 0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FEE440; /* soft bright yellow */
+      color: #2A2A2A;
     }
 
-    header>
-    <img src="logo.png" alt="Daycare Logo" width="200" style="display:block; margin:auto;">
-    <h1>The Crawlers Daycare</h1>
-</header>
-        background-color: #4FC3F7; /* happy sky blue header */
-        padding: 20px;
-        text-align: center;
-        color: white;
+    header {
+      background-color: #4FC3F7; /* sky blue */
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto 10px auto;
+      width: 200px;
     }
 
     nav {
-        background-color: #0288D1; /* stronger blue for menu bar */
-        padding: 10px;
-        text-align: center;
+      background-color: #0288D1; /* darker blue */
+      text-align: center;
+      padding: 10px 0;
     }
 
     nav a {
-        color: white; 
-        font-weight: bold;
-        margin: 0 15px;
-        text-decoration: none;
-        font-size: 18px;
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     nav a:hover {
-        text-decoration: underline;
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     h1, h2 {
-        color: #0288D1; 
+      color: #0288D1;
+      text-align: center;
+    }
+
+    form label, .policy label {
+      display: block;
+      margin-top: 10px;
     }
 
     .policy {
-        background-color: white;
-        border-left: 8px solid #4FC3F7;
-        padding: 15px;
-        border-radius: 10px;
-        margin: 20px 0;
+      background-color: white;
+      border-left: 8px solid #4FC3F7;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
     }
 
     button {
-        background-color: #4FC3F7;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        font-size: 16px;
-        margin-top: 10px;
+      background-color: #4FC3F7;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
     }
 
     button:hover {
-        background-color: #0288D1;
-    }
-</style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
-    }
-    nav {
-      margin-bottom: 20px;
-      background-color: #f8f8f8;
-      padding: 10px;
-      border-radius: 8px;
-    }
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #2a7ae2;
-      font-weight: bold;
-    }
-    h1, h2 {
-      color: #2a7ae2;
-    }
-    .policy {
-      margin-bottom: 20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 5px;
-      background-color: #f0f8ff;
-    }
-    label {
-      display: block;
-      margin-top: 5px;
+      background-color: #0288D1;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to [Your Daycare Name]</h1>
+<header>
+  <img src="logo.png" alt="Daycare Logo">
+  <h1>The Crawlers Daycare</h1>
+</header>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#application">Application Form</a>
-    <a href="#policies">Policies</a>
-  </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#application">Application Form</a>
+  <a href="#policies">Policies</a>
+</nav>
 
-  <!-- About Section -->
-  <h2 id="about">About Us</h2>
+<section id="about">
+  <h2>About Us</h2>
   <p>[Insert your About content here from Word doc]</p>
+</section>
 
-  <!-- Application Form Section -->
-  <h2 id="application">Application Form</h2>
+<section id="application">
+  <h2>Application Form</h2>
   <p>Registration is compulsory. Please fill out all required fields:</p>
   <form>
     <label>Full Name: <input type="text" name="fullname" required></label>
@@ -160,9 +117,10 @@
     </label>
     <button type="submit">Submit Application</button>
   </form>
+</section>
 
-  <!-- Policies Section -->
-  <h2 id="policies">Policies</h2>
+<section id="policies">
+  <h2>Policies</h2>
 
   <div class="policy">
     <h3>Fee & Payment Policy</h3>
@@ -205,6 +163,8 @@
     <p>Stationery is compulsory, due by March 31. Late or missing stationery requires R1500 to cover stationery and toiletry fees. Fees are non-refundable.</p>
     <label><input type="checkbox" required> I have read and understood the Stationery Policy</label>
   </div>
+
+</section>
 
 </body>
 </html>
