@@ -6,6 +6,66 @@
   <title>My Daycare</title>
   <style>
     body {
+        font-family: Arial, sans-serif;
+        background-color: #FEE440; /* bright soft yellow background */
+        color: #2A2A2A; /* dark grey text for readability */
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #4FC3F7; /* happy sky blue header */
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+
+    nav {
+        background-color: #0288D1; /* stronger blue for menu bar */
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white; 
+        font-weight: bold;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    h1, h2 {
+        color: #0288D1; 
+    }
+
+    .policy {
+        background-color: white;
+        border-left: 8px solid #4FC3F7;
+        padding: 15px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    button {
+        background-color: #4FC3F7;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0288D1;
+    }
+</style>
+    body {
       font-family: Arial, sans-serif;
       margin: 20px;
       line-height: 1.6;
