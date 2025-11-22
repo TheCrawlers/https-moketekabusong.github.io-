@@ -1,173 +1,33 @@
 <!DOCTYPE html>
-<!-- rebuild -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Crawlers Daycare</title>
-  <link rel="icon" href="favicon.ico"> <!-- favicon added -->
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #FEE440; /* soft bright yellow */
-      color: #2A2A2A;
-    }
-
-    header {
-      background-color: #4FC3F7; /* sky blue */
-      text-align: center;
-      padding: 20px;
-      color: white;
-    }
-
-    header img {
-      display: block;
-      margin: 0 auto 10px auto;
-      width: 200px;
-    }
-
-    nav {
-      background-color: #0288D1; /* darker blue */
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h1, h2 {
-      color: #0288D1;
-      text-align: center;
-    }
-
-    form label, .policy label {
-      display: block;
-      margin-top: 10px;
-    }
-
-    .policy {
-      background-color: white;
-      border-left: 8px solid #4FC3F7;
-      padding: 15px;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
-
-    button {
-      background-color: #4FC3F7;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background-color: #0288D1;
-    }
-  </style>
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
-<header>
-  <img src="logo.png" alt="Daycare Logo">
-  <h1>The Crawlers Daycare</h1>
-</header>
+  <!-- Header appears first -->
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#application">Application Form</a>
-  <a href="#policies">Policies</a>
-</nav>
+  <!-- Logo appears below header -->
+  <section id="logo-section" style="text-align: center; margin: 20px 0;">
+    <img src="images/logo.png" alt="Logo" style="max-width: 200px;">
+  </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p>[Insert your About content here from Word doc]</p>
-</section>
+  <!-- Main content -->
+  <main>
+    <p>This is the homepage content.</p>
+  </main>
 
-<section id="application">
-  <h2>Application Form</h2>
-  <p>Registration is compulsory. Please fill out all required fields:</p>
-  <form>
-    <label>Full Name: <input type="text" name="fullname" required></label>
-    <label>Child's Name: <input type="text" name="childname" required></label>
-    <label>Age: <input type="number" name="age" required></label>
-    <label>Parent Phone: <input type="tel" name="phone" required></label>
-    <label>Parent Email: <input type="email" name="email" required></label>
-    <label>
-      <input type="checkbox" required>
-      I confirm that I have read and understood the policies.
-    </label>
-    <button type="submit">Submit Application</button>
-  </form>
-</section>
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
 
-<section id="policies">
-  <h2>Policies</h2>
-
-  <div class="policy">
-    <h3>Fee & Payment Policy</h3>
-    <p>Fees: R900 (children without pampers), R1000 (children wearing pampers). Registration fee: R400 for new children. December fees must be paid in October. Concert fee and graduation fee are compulsory and non-refundable. Late payments: R100 penalty.</p>
-    <label><input type="checkbox" required> I have read and understood the Fee & Payment Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Attendance & Punctuality</h3>
-    <p>Daycare opens at 7:00am, closes school gates at 8:00am (even in holidays), ends at 5:00pm. Late pickup penalty: R20.</p>
-    <label><input type="checkbox" required> I have read and understood the Attendance & Punctuality Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Nutrition Policy</h3>
-    <p>Parents are advised to give children fruits, vegetables, and water. No sweets, noodles, or chips allowed.</p>
-    <label><input type="checkbox" required> I have read and understood the Nutrition Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Sickness Policy</h3>
-    <p>Children who are ill must stay at home to prevent infection. Forcefully bringing a sick child is not allowed.</p>
-    <label><input type="checkbox" required> I have read and understood the Sickness Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Uniform Policy</h3>
-    <p>Uniform is compulsory. No child is allowed to attend without a school uniform.</p>
-    <label><input type="checkbox" required> I have read and understood the Uniform Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Skill Development</h3>
-    <p>Extravaganza is cancelled. Crocheting and piano lessons are now compulsory for all children.</p>
-    <label><input type="checkbox" required> I have read and understood the Skill Development Policy</label>
-  </div>
-
-  <div class="policy">
-    <h3>Stationery Policy</h3>
-    <p>Stationery is compulsory, due by March 31. Late or missing stationery requires R1500 to cover stationery and toiletry fees. Fees are non-refundable.</p>
-    <label><input type="checkbox" required> I have read and understood the Stationery Policy</label>
-  </div>
-
-</section>
-
+  <script src="js/app.js"></script>
 </body>
 </html>
